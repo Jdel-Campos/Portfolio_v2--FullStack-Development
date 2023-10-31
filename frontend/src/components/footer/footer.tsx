@@ -34,12 +34,12 @@ export default function FooterPage() {
                         <p> “Everything is a matter of priority. Is your priority today your future tomorrow?” </p>
                     </div>
                     <div className="flex gap-4 text-2xl text-mine-shaft-primary-800">
-                        <a href="https://www.behance.net/jdelcampos" target="_blank"> <LiaBehance className="hover:text-brand-primary" /> </a>
-                        <a href="https://dribbble.com/jdel_campos" target="_blank"> <LiaDribbble className="hover:text-brand-primary"/> </a>
-                        <a href="https://github.com/Jdel-Campos" target="_blank"> <LiaGithub className="hover:text-brand-primary"/> </a>
-                        <a href="https://www.linkedin.com/in/jdel-campos/" target="_blank"> <LiaLinkedinIn className="hover:text-brand-primary"/> </a>
-                        <a href="https://linkwhats.app/e732a5" target="_blank"> <LiaWhatsapp className="hover:text-brand-primary"/> </a>
-                        <a href="mailto:campos.workspace@gmail.com" target="_blank"> <LiaEnvelope className="hover:text-brand-primary"/> </a>
+                        <a href="https://www.behance.net/jdelcampos" target="_blank"> <LiaBehance className="hover:text-brand-primary hover:border-b hover:border-brand-primary" /> </a>
+                        <a href="https://dribbble.com/jdel_campos" target="_blank"> <LiaDribbble className="hover:text-brand-primary hover:border-b hover:border-brand-primary"/> </a>
+                        <a href="https://github.com/Jdel-Campos" target="_blank"> <LiaGithub className="hover:text-brand-primary hover:border-b hover:border-brand-primary"/> </a>
+                        <a href="https://www.linkedin.com/in/jdel-campos/" target="_blank"> <LiaLinkedinIn className="hover:text-brand-primary hover:border-b hover:border-brand-primary"/> </a>
+                        <a href="https://linkwhats.app/e732a5" target="_blank"> <LiaWhatsapp className="hover:text-brand-primary hover:border-b hover:border-brand-primary"/> </a>
+                        <a href="mailto:campos.workspace@gmail.com" target="_blank"> <LiaEnvelope className="hover:text-brand-primary hover:border-b hover:border-brand-primary"/> </a>
                     </div>
                 </div>
             </div>
@@ -49,5 +49,5 @@ export default function FooterPage() {
             <p className="font-medium italic text-sm text-mine-shaft-primary-600"> 2023 - Designed & Built by Jardel Campos </p>
         </div>
       </>
-    )
+    );
 };

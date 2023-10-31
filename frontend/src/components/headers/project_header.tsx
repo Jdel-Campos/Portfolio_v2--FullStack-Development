@@ -1,5 +1,6 @@
 "use client"
 
+import Link from "next/link";
 import { useEffect, useState } from "react";
 
 interface HeaderProps {
@@ -9,7 +10,7 @@ interface HeaderProps {
 export default function ProjectHeader() {
     const [activeLink, setActiveLink] = useState('home');
     // eslint-disable-next-line react-hooks/exhaustive-deps
-    const sections = ['home', 'all projects', 'visual design', 'design provider', 'developer'];
+    const sections = ['all projects', 'visual design', 'design provider', 'developer'];
   
     useEffect(() => {
       setActiveLink('all projects');
@@ -51,25 +52,33 @@ export default function ProjectHeader() {
       };
     }, [sections]);
 
+    const [isButtonDisabled, setIsButtonDisabled] = useState(false);
+
+
     return (
         <>
-            <header id="header" className="h-20 w-screen flex items-center justify-end bg-silver-chalice-neutral-50" >
+            <header id="header" className="h-20 w-screen flex items-center justify-end bg-silver-chalice-neutral-50 fixed z-50" >
                 <div >
-                    <nav >
-                        <ul className="flex flex-row gap-8 px-32 justify-end items-end text-mine-shaft-primary-500" >
+                    <nav className="flex gap-8 px-32 justify-end items-end text-mine-shaft-primary-500">
+                      <Link href="/">
+                        <div>
+                          <p className="hover:text-mine-shaft-primary-300 hover:underline"> Home </p>
+                        </div>
+                      </Link>
+                        <ul className="flex flex-row gap-8 justify-end items-end text-mine-shaft-primary-500" >
                             {sections.map((section) => (
                                 <li key={section} className="relative">
                                     <a
                                         href={`#${section}`}
                                         className={`${
-                                        activeLink === section ? 'text-brand-primary font-semibold italic text-xl ' : ''
+                                        activeLink === section ? 'text-brand-primary font-semibold italic text-xl z-20' : 'hover:text-mine-shaft-primary-300 hover:underline'
                                         }`}
                                         onClick={(event) => handleLinkClick(event, section)}
                                     >
                                         {section.charAt(0).toUpperCase() + section.slice(1)}
                                     </a>
                                     {activeLink === section && (
-                                      <div className="flex items-center justify-center border absolute w-full h-3 top-4 -left-3 border-brand-accent bg-brand-accent opacity-50 -z-0"
+                                      <div className="flex items-center justify-center border absolute w-full h-3 top-4 -left-3 border-brand-accent bg-brand-accent opacity-50 -z-10"
                                       > </div>
                                     )}
                                 </li>
@@ -79,5 +88,5 @@ export default function ProjectHeader() {
                 </div>
             </header>
         </>
-    )
+    );
 };

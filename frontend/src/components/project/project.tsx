@@ -1,3 +1,4 @@
+import Link from "next/link";
 import ProjectCard from "../cards/project_card/project_card";
 import { LiaExternalLinkAltSolid } from "react-icons/lia"
 
@@ -39,11 +40,11 @@ export default function ProjectPage() {
             <div className=" flex flex-col items-center pt-16">
                 <p className="font-semibold text-lg underline decoration-brand-text text-brand-text"> Did you like these? </p>
                 <div className="flex gap-2 hover:opacity-75">
-                    <a href="" className="text-sm font-medium italic text-brand-primary"> See more of my projects here. </a>
+                    <Link href="/projects" className="text-sm font-medium italic text-brand-primary"> See more of my projects here. </Link>
                     <LiaExternalLinkAltSolid className="text-brand-primary "/>
                 </div>
             </div>
         </div>
       </>
-    )
+    );
   };

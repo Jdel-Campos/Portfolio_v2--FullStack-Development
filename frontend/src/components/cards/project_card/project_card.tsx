@@ -35,16 +35,16 @@ export default function ProjectCard() {
         <div className="flex justify-between">
             <div className="flex gap-2">
                 {'project.urlBehance' ? (
-                    <a href="" target="_blank"> <LiaBehance className="text-2xl text-brand-primary hover:opacity-75"/> 
+                    <a href="" target="_blank"> <LiaBehance className="text-2xl text-brand-primary hover:border-b hover:border-brand-primary"/> 
                     </a> ) : ( <LiaBehance className="text-2xl text-silver-chalice-neutral-300"/> )}
                 {'project.urlDribbble' ? (
-                    <a href="" target="_blank"> <LiaDribbble className="text-2xl text-brand-primary hover:opacity-75"/>
+                    <a href="" target="_blank"> <LiaDribbble className="text-2xl text-brand-primary hover:border-b hover:border-brand-primary"/>
                     </a> ) : ( <LiaDribbble className="text-2xl text-silver-chalice-neutral-300"/> )}
                 {'project.urlGithub' ? (
-                    <a href="" target="_blank"> <LiaGithub className="text-2xl text-brand-primary hover:opacity-75"/>
+                    <a href="" target="_blank"> <LiaGithub className="text-2xl text-brand-primary hover:border-b hover:border-brand-primary"/>
                     </a> ) : ( <LiaGithub className="text-2xl text-silver-chalice-neutral-300"/> )}
                 {'project.urlVercel' ? (
-                    <a href="" target="_blank"> <PiAirplay className="text-2xl text-brand-primary hover:opacity-75"/> 
+                    <a href="" target="_blank"> <PiAirplay className="text-2xl text-brand-primary hover:border-b hover:border-brand-primary"/> 
                     </a> ) : ( <PiAirplay className="text-2xl text-silver-chalice-neutral-300"/>)}
             </div>
 
@@ -54,5 +54,5 @@ export default function ProjectCard() {
         </div>
     </div>
     </>
-  )
+  );
 };

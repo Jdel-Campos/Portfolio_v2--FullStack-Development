@@ -1,17 +1,19 @@
 import FooterPage from "@/components/footer/footer"
-import MainHeader from "@/components/headers/main_header"
+import AboutHeader from "@/components/headers/about_header"
 import { FaRegFilePdf } from "react-icons/fa"
+import { PiCertificateThin } from "react-icons/pi"
+import { HiOutlineInformationCircle } from "react-icons/hi"
 
 export default function AboutPage() {
 
     return (
         <>
-            <MainHeader />
-            <div id="about me" className="w-full h-screen">
-                <div className=""></div>
-                <div>
-                    <h3>About me</h3>
-                    <p>
+            <AboutHeader />
+            <div id="about me" className="w-full h-full px-250px py-52 flex flex-col gap-24 items-center justify-center" >
+                <div className="w-full h-300px bg-brand-accent"></div>
+                <div className="flex flex-col gap-8">
+                    <h3 className="text-brand-primary font-semibold text-xl">About me</h3>
+                    <p className="text-justify font-normal text-brand-text">
                         Hi, I&apos;m Jardel Campos, a passionate user interface (UI) designer and web developer.
                         My affinity with technology goes back to childhood, when I was just a curious kid who loved taking apart my cars to explore their electronic parts. However, at the time, I had no idea that I could turn this passion into my career.
                         My journey into the world of technology began to take shape in mid-2016, when I decided that I wanted to work online and make a difference to people&apos;s lives. However, I still hadn&apos;t found my true passion.
@@ -22,23 +24,46 @@ export default function AboutPage() {
                         I&apos;m always on the lookout for new and exciting opportunities in the field of design and development. If you&apos;re interested in collaborating on inspiring projects or want to exchange ideas, don&apos;t hesitate to get in touch. Let&apos;s create something amazing together!
                     </p>
                 </div>
-                <div>
-                    <h3> Courses and colleges </h3>
-                    <h4> Curses </h4>
-                    <p> UX/UI Designer - Imagine School - jun 2023 - mar 2024 </p>
-                    <p> FullStack Developer - Kenzie Academy Brasil - nov 2022 - nov 2023 </p>
-                    <p> Start Graphic Course | Graphic Design for Beginners - aug 2023 - nov 2023 </p>                    
+                <div className="w-full flex flex-col gap-8 items-start">
+                    <h3 className="text-brand-primary font-semibold text-xl"> Courses and colleges </h3>
+                    <div className="flex flex-col gap-4 pl-4">
+                        <h4 className="text-brand-primary font-semibold"> Curses </h4>
+                        <div>
+                            <div className="flex gap-2 pl-4 items-center">
+                                <PiCertificateThin className="text-brand-primary text-2xl"/>
+                                <p className="text-justify font-normal text-brand-text"> UX/UI Designer - Imagine School - jun 2023 - mar 2024 </p>
+                            </div>
+                            <div className="flex gap-2 pl-4 items-center">
+                                <PiCertificateThin className="text-brand-primary text-2xl"/>
+                                <p className="text-justify font-normal text-brand-text"> FullStack Developer - Kenzie Academy Brasil - nov 2022 - nov 2023 </p>
+                            </div>
+                            <div className="flex gap-2 pl-4 items-center">
+                                <PiCertificateThin className="text-brand-primary text-2xl"/>
+                                <p className="text-justify font-normal text-brand-text"> Start Graphic Course | Graphic Design for Beginners - aug 2023 - nov 2023 </p>                    
+                            </div>
+                        </div>
+                    </div>
+                    <div className="flex flex-col gap-4 pl-4">
+                        <h4 className="text-brand-primary font-semibold"> College </h4>
+                        <div className="border px-4 w-full h-16 flex justify-center items-center">
+                            <div className="flex gap-2 items-center">
+                                <HiOutlineInformationCircle className="text-red-800 text-2xl"/>
+                                <p className="text-justify font-normal text-brand-text"> I&apos;m trying to pass the entrance exam to study software engineering and then become a front-end engineer. </p>
+                            </div>
+                        </div>
+                    </div>
+
                 </div>
-                <div>
-                    <h3>Workplaces</h3>
-                    <p>
+                <div className="flex flex-col gap-8">
+                    <h3 className="text-brand-primary font-semibold text-xl">Workplaces</h3>
+                    <p className="text-justify font-normal text-brand-text">
                         I&apos;m a dedicated recent graduate, eager to explore new opportunities in the job market. As I search for my next professional challenge, I&apos;m committed to honing my skills through freelance projects.
                     </p>
                 </div>
-                <div className=" flex flex-col items-center pt-16">
-                <p className="font-semibold text-lg underline decoration-brand-text text-brand-text"> Would you like to see my CV? </p>
+                <div className="w-full flex flex-col items-center pt-16">
+                <p className="font-semibold text-base underline decoration-brand-text text-brand-text"> Would you like to see my CV? </p>
                 <div className="flex gap-2 hover:opacity-75">
-                    <a href="" className="text-sm font-medium italic text-brand-primary"> Download here. </a>
+                    <a href="https://acrobat.adobe.com/link/review?uri=urn:aaid:scds:US:8f6d39c3-2b40-3ea1-bb3c-060524e34a20" target="_blank" className="text-sm font-medium italic text-brand-primary"> Download here. </a>
                     <FaRegFilePdf className="text-brand-primary "/>
                 </div>
             </div>

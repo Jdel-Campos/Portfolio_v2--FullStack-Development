@@ -6,6 +6,10 @@ body {
 
 }
 
+.gap-30px{
+  gap: 30px;
+}
+
 .px-120px{
   padding-left: 120px;
   padding-right: 120px;
@@ -39,12 +43,24 @@ body {
   width: 350px;
 };
 
+.w-400px{
+  width: 400px;
+};
+
 .h-300px{
   width: 300px;
 };
 
 .h-450px{
   width: 450px;
+};
+
+.h-280px{
+  height: 280px;
+};
+
+.h-244px{
+  height: 244px;
 };
 
 .h-900px{
@@ -61,6 +77,14 @@ body {
 
 .w-163px{
   height: 163px;
+};
+
+.w-150px{
+  width: 150px;
+};
+
+.h-100px{
+  height: 100px;
 };
 
 .left-8px{

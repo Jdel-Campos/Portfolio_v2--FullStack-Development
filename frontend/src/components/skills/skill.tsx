@@ -22,9 +22,7 @@ export default function SkillPage() {
                         </div>
                 </div>
                 <div className="relative bg-brand-background">
-                <div className="flex justify-center absolute -top-32 inset-x-0">
-                        <SkillCard />
-                        <SkillCard />
+                <div className="flex justify-center absolute -top-24 inset-x-0">
                         <SkillCard />
                     </div>
                 </div>
@@ -32,7 +30,7 @@ export default function SkillPage() {
             <div className=" flex flex-col items-center pt-16 pb-20">
                 <p className="font-semibold text-lg underline decoration-brand-text text-brand-text"> Want to know more? </p>
                 <div className="flex gap-2 hover:opacity-75">
-                    <Link href="/about" className="text-sm font-medium italic text-brand-primary"> See more. </Link>
+                    <Link href="/about_me" className="text-sm font-medium italic text-brand-primary"> See more. </Link>
                     <LiaExternalLinkAltSolid className="text-brand-primary "/>
                 </div>
             </div>

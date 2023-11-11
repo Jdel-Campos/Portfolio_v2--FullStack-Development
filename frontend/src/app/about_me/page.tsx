@@ -1,8 +1,9 @@
 import FooterPage from "@/components/footer/footer"
 import AboutHeader from "@/components/headers/about_header"
 import { FaRegFilePdf } from "react-icons/fa"
-import { PiCertificateThin } from "react-icons/pi"
+import { PiAirplayBold, PiCertificate, PiTrashThin, PiWarningCircleThin, PiPencilLineThin, PiUploadSimpleThin, PiGraduationCapThin, PiSuitcaseSimpleThin, PiAirplayThin, PiArrowLeftThin, PiArrowSquareOutThin, PiCaretRightThin, PiCaretLeftThin, PiCopyrightThin, PiTriangleThin } from "react-icons/pi"
 import { HiOutlineInformationCircle } from "react-icons/hi"
+import { CiMenuBurger, CiSearch } from "react-icons/ci"
 
 export default function AboutPage() {
 
@@ -30,16 +31,16 @@ export default function AboutPage() {
                         <h4 className="text-brand-primary font-semibold"> Curses </h4>
                         <div>
                             <div className="flex gap-2 pl-4 items-center">
-                                <PiCertificateThin className="text-brand-primary text-2xl"/>
+                                <PiCertificate className="text-brand-primary text-2xl"/>
                                 <p className="text-justify font-normal text-brand-text"> UX/UI Designer - Imagine School - jun 2023 - mar 2024 </p>
                             </div>
                             <div className="flex gap-2 pl-4 items-center">
-                                <PiCertificateThin className="text-brand-primary text-2xl"/>
+                                <PiCertificate className="text-brand-primary text-2xl"/>
                                 <p className="text-justify font-normal text-brand-text"> FullStack Developer - Kenzie Academy Brasil - nov 2022 - nov 2023 </p>
                             </div>
                             <div className="flex gap-2 pl-4 items-center">
-                                <PiCertificateThin className="text-brand-primary text-2xl"/>
-                                <p className="text-justify font-normal text-brand-text"> Start Graphic Course | Graphic Design for Beginners - aug 2023 - nov 2023 </p>                    
+                                <PiCertificate className="text-brand-primary text-2xl"/>
+                                <p className="text-justify font-normal text-brand-text"> Start Graphic Course - Graphic Design for Beginners - aug 2023 - nov 2023 </p>                    
                             </div>
                         </div>
                     </div>
@@ -48,7 +49,7 @@ export default function AboutPage() {
                         <div className="border px-4 w-full h-16 flex justify-center items-center">
                             <div className="flex gap-2 items-center">
                                 <HiOutlineInformationCircle className="text-red-800 text-2xl"/>
-                                <p className="text-justify font-normal text-brand-text"> I&apos;m trying to pass the entrance exam to study software engineering and then become a front-end engineer. </p>
+                                <p className="text-justify font-normal text-brand-text"> Unfortunately, I don&apos;t have a university degree yet, but I&apos;m pursuing this achievement. In which I want to study software engineering and then specialize to become a front-end engineer. </p>
                             </div>
                         </div>
                     </div>

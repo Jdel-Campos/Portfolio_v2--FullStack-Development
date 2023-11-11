@@ -12,7 +12,7 @@ export default function FooterPage() {
             <div className=" flex flex-col items-center gap-3">
                 <h4 className="font-medium italic text-brand-text"> Want to collaborate? </h4>
                 <a href="mailto:campos.workspace@gmail.com" target="_blank"> 
-                    <div className="flex gap-2 justify-center relative">
+                    <div className="flex gap-2 justify-center relative hover:opacity-80">
                         <h3 className="italic font-medium text-4xl text-brand-secondary z-20"> Contact me! </h3>
                         <div className="border absolute w-56 h-5 top-6 -left-3 border-brand-accent bg-brand-accent opacity-50"></div>
                     </div>

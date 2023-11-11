@@ -1,6 +1,9 @@
+"use client"
+
 import Link from "next/link";
 import ProjectCard from "../cards/project_card/project_card";
 import { LiaExternalLinkAltSolid } from "react-icons/lia"
+
 
 export default function ProjectPage() {
 
@@ -30,7 +33,7 @@ export default function ProjectPage() {
                 </div>
             </div>
 
-            <div className="px-120px pt-56 flex flex-wrap justify-center gap-4">
+            <div className="px-120px pt-56 flex flex-wrap justify-center gap-7">
                 <ProjectCard />
                 <ProjectCard />
                 <ProjectCard />

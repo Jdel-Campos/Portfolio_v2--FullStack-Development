@@ -20,7 +20,7 @@ export default function ProjectsPage() {
                     </div>
                 </article>
             </div>
-            <div className="flex px-120px flex-wrap justify-evenly gap-16 py-32">
+            <div className="px-120px py-56 flex flex-wrap justify-center gap-7">
                 <ProjectCard />
                 <ProjectCard />
                 <ProjectCard />

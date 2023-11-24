@@ -1,19 +1,18 @@
-import FooterPage from "@/components/footer/footer"
-import AboutHeader from "@/components/headers/about_header"
 import { FaRegFilePdf } from "react-icons/fa"
-import { PiAirplayBold, PiCertificate, PiTrashThin, PiWarningCircleThin, PiPencilLineThin, PiUploadSimpleThin, PiGraduationCapThin, PiSuitcaseSimpleThin, PiAirplayThin, PiArrowLeftThin, PiArrowSquareOutThin, PiCaretRightThin, PiCaretLeftThin, PiCopyrightThin, PiTriangleThin } from "react-icons/pi"
+import { PiCertificate, PiWarningCircleThin } from "react-icons/pi"
 import { HiOutlineInformationCircle } from "react-icons/hi"
-import { CiMenuBurger, CiSearch } from "react-icons/ci"
+import AppFooter from "@/components/footer/section_footer"
+import SectionHeader from "@/components/header/section_header"
 
-export default function AboutPage() {
+
+export default function AppAboutMe () {
 
     return (
-        <>
-            <AboutHeader />
-            <div id="about me" className="w-full h-full px-250px py-52 flex flex-col gap-24 items-center justify-center" >
-                <div className="w-full h-300px bg-brand-accent"></div>
+        <>  
+            <SectionHeader  />
+            <div id="about me" className="w-full h-full px-250px py-28 flex flex-col gap-24 items-center justify-center bg-text-color-masala-50" >
                 <div className="flex flex-col gap-8">
-                    <h3 className="text-brand-primary font-semibold text-xl">About me</h3>
+                    <h3 className="text-brand-secondary font-semibold text-xl">About me</h3>
                     <p className="text-justify font-normal text-brand-text">
                         Hi, I&apos;m Jardel Campos, a passionate user interface (UI) designer and web developer.
                         My affinity with technology goes back to childhood, when I was just a curious kid who loved taking apart my cars to explore their electronic parts. However, at the time, I had no idea that I could turn this passion into my career.
@@ -26,20 +25,20 @@ export default function AboutPage() {
                     </p>
                 </div>
                 <div className="w-full flex flex-col gap-8 items-start">
-                    <h3 className="text-brand-primary font-semibold text-xl"> Courses and colleges </h3>
+                    <h3 className="text-brand-secondary font-semibold text-xl"> Courses and colleges </h3>
                     <div className="flex flex-col gap-4 pl-4">
-                        <h4 className="text-brand-primary font-semibold"> Curses </h4>
+                        <h4 className="text-brand-secondary font-semibold"> Curses </h4>
                         <div>
                             <div className="flex gap-2 pl-4 items-center">
-                                <PiCertificate className="text-brand-primary text-2xl"/>
+                                <PiCertificate className="text-brand-secondary text-2xl"/>
                                 <p className="text-justify font-normal text-brand-text"> UX/UI Designer - Imagine School - jun 2023 - mar 2024 </p>
                             </div>
                             <div className="flex gap-2 pl-4 items-center">
-                                <PiCertificate className="text-brand-primary text-2xl"/>
+                                <PiCertificate className="text-brand-secondary text-2xl"/>
                                 <p className="text-justify font-normal text-brand-text"> FullStack Developer - Kenzie Academy Brasil - nov 2022 - nov 2023 </p>
                             </div>
                             <div className="flex gap-2 pl-4 items-center">
-                                <PiCertificate className="text-brand-primary text-2xl"/>
+                                <PiCertificate className="text-brand-secondary text-2xl"/>
                                 <p className="text-justify font-normal text-brand-text"> Start Graphic Course - Graphic Design for Beginners - aug 2023 - nov 2023 </p>                    
                             </div>
                         </div>
@@ -48,28 +47,28 @@ export default function AboutPage() {
                         <h4 className="text-brand-primary font-semibold"> College </h4>
                         <div className="border px-4 w-full h-16 flex justify-center items-center">
                             <div className="flex gap-2 items-center">
-                                <HiOutlineInformationCircle className="text-red-800 text-2xl"/>
-                                <p className="text-justify font-normal text-brand-text"> Unfortunately, I don&apos;t have a university degree yet, but I&apos;m pursuing this achievement. In which I want to study software engineering and then specialize to become a front-end engineer. </p>
+                                <HiOutlineInformationCircle className="text-semantics-attachment-thunderbird text-2xl"/>
+                                <p className="text-justify font-normal text-brand-text"> Unfortunately, I don&apos;t have a university degree yet, but I&apos;m pursuing this achievement. </p>
                             </div>
                         </div>
-                    </div>
+                </div>
 
                 </div>
                 <div className="flex flex-col gap-8">
-                    <h3 className="text-brand-primary font-semibold text-xl">Workplaces</h3>
+                    <h3 className="text-brand-secondary font-semibold text-xl">Workplaces</h3>
                     <p className="text-justify font-normal text-brand-text">
                         I&apos;m a dedicated recent graduate, eager to explore new opportunities in the job market. As I search for my next professional challenge, I&apos;m committed to honing my skills through freelance projects.
                     </p>
                 </div>
                 <div className="w-full flex flex-col items-center pt-16">
-                <p className="font-semibold text-base underline decoration-brand-text text-brand-text"> Would you like to see my CV? </p>
-                <div className="flex gap-2 hover:opacity-75">
-                    <a href="https://acrobat.adobe.com/link/review?uri=urn:aaid:scds:US:8f6d39c3-2b40-3ea1-bb3c-060524e34a20" target="_blank" className="text-sm font-medium italic text-brand-primary"> Download here. </a>
-                    <FaRegFilePdf className="text-brand-primary "/>
+                    <p className="font-semibold text-base underline decoration-brand-text text-brand-text"> Would you like to see my CV? </p>
+                    <div className="flex gap-2 hover:opacity-75">
+                        <a href="https://acrobat.adobe.com/link/review?uri=urn:aaid:scds:US:8f6d39c3-2b40-3ea1-bb3c-060524e34a20" target="_blank" className="text-sm font-medium italic text-brand-secondary"> Download here. </a>
+                        <FaRegFilePdf className="text-brand-secondary "/>
+                    </div>
                 </div>
             </div>
-            </div>
-            <FooterPage />
+            < AppFooter />
         </>
     )
-  };
+};
